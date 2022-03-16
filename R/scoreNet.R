@@ -1,4 +1,8 @@
-scoreNet <- function(hiddenLayer, reps,alpha, trainData){
+scoreNet <- function(hiddenLayer, reps,alpha, trainData,formula){
+  if(is.null(formula)){
+    message("No Formula Given")
+    return("Failed: No Formula")
+  }
   scale(trainData)
   message("STARTING TRAINING")
   scoreNet <- neuralnet::neuralnet(formula, data=trainNorm, act.fct = "logistic", hidden = hiddenLayer, linear.output=T,rep = reps,
