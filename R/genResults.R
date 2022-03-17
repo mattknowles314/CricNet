@@ -6,6 +6,7 @@
 #' the prior columns being the runrates for the corresponding over.
 #' The function then returns the dataframe of results
 #' @return A data frame containing unscaled true game scores, predicted game scores and the error
+#' @export
 genResults <- function(network,testData){
   best_rep = which.min(network$result.matrix[1,])
   predictVals <- neuralnet::compute(network,scale(testData[,1:50]),rep=best_rep)

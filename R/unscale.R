@@ -5,6 +5,7 @@
 #' in the first place
 #'
 #' @return A column of data that is no longer scaled
+#' @export
 unscale <- function(target, original){
   scale_val = attr(original,"scaled:scale")[51]
   cent = attr(original, "scaled:center")[51]

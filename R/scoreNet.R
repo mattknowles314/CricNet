@@ -8,6 +8,7 @@
 #'@seealso [neuralnet::neuralnet()] which this function acts as a wrapper for
 #'@examples
 #'scoreNet(c(10,5,3),1000,0.01,formula)
+#'@export
 scoreNet <- function(hiddenLayer, reps,alpha, trainData,formula){
   if(is.null(formula)){
     message("No Formula Given")
