@@ -2,7 +2,7 @@
 % Please edit documentation in R/netAnalysis.R
 \name{netAnalysis}
 \alias{netAnalysis}
-\title{Perform analysis on the neural network/}
+\title{Perform analysis on the neural network}
 \usage{
 netAnalysis(results)
 }
