@@ -1,6 +1,6 @@
 Package: CricNet
 Title: Predicting cricket scores with runrate data
-Version: 0.0.0.9000
+Version: 0.1
 Authors@R: 
     person("Matthew", "Knowles", , "mattknowles314@gmail.com", role = c("aut", "cre"))
 Description: Code in support of my masters thesis on the topic.
